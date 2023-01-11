@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simpol-Responsive exampol</title>
+    <style>
+        .container{
+            display: flex;
+            /* flex-wrap: wrap; */
+            gap: 10px;
+        }
+        .box{
+            height: 200px;
+            width: 100%;
+            background-color: aqua;
+        }
+        @media screen and  (max-width:576px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+        @media screen and (min-width:577px) and (max-width:972px){
+            .container{
+                font-size: 40px;
+                flex-direction: row-reverse;
+            }            
+        }
+    </style>
+</head>
+<body>
+    <!-- .box*4>h3*{item-$} -->
+    <section class="container">
+    <div class="box">
+        <h3>item-1</h3>
+    </div>
+    <div class="box">
+        <h3>item-1</h3>
+    </div>
+    <div class="box">
+        <h3>item-1</h3>
+    </div>
+    <div class="box">
+        <h3>item-1</h3>
+    </div>
+
+    </section>
+</body>
+</html>
